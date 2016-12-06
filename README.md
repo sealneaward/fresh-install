@@ -63,3 +63,55 @@ sudo ./deviceQuery
 sudo cp lib64/* /usr/local/cuda-8.0/lib64
 sudo cp include/* /usr/local/cuda-8.0/include
 ```
+
+### Basic Python Install
+- Do this before any packages are installed
+
+```
+sudo apt-get install python-dev build-essential gfortran libopenblas-dev liblapack-dev
+```
+
+### Tensorflow Setup
+- Add this to `~/.bashrc`
+
+```bash
+export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-0.12.0rc0-cp27-none-linux_x86_64.whl
+```
+
+- Source the profile
+
+```
+source ~/.bashrc
+```
+
+- Install the package
+
+```
+sudo pip install --upgrade $TF_BINARY_URL
+```
+
+### Theano Setup
+
+```
+sudo pip install --upgrade --no-deps git+git://github.com/Theano/Theano.git
+```
+
+### Keras Setup
+
+- Install the package
+
+```
+sudo pip install --upgrade --no-deps git+git://github.com/fchollet/keras.git
+```
+
+- Change the config for Keras
+
+```
+nano ~/.keras/keras.json
+```
+
+- Add theano as backend
+
+```
+
+```
