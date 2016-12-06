@@ -112,6 +112,11 @@ nano ~/.keras/keras.json
 
 - Add theano as backend
 
-```
-
+```javascript
+{
+    "image_dim_ordering": "tf",
+    "epsilon": 1e-07,
+    "floatx": "float32",
+    "backend": "theano"
+}
 ```
