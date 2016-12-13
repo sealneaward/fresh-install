@@ -120,3 +120,17 @@ nano ~/.keras/keras.json
     "backend": "theano"
 }
 ```
+
+- Change the config for Theano
+
+```
+nano ~/.theanorc
+```
+
+- Add gpu as device
+
+```bash
+[global]
+floatX = float32
+device = gpu0
+```
