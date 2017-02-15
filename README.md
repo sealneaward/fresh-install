@@ -114,7 +114,7 @@ nano ~/.keras/keras.json
 
 ```javascript
 {
-    "image_dim_ordering": "tf",
+    "image_dim_ordering": "th",
     "epsilon": 1e-07,
     "floatx": "float32",
     "backend": "theano"
